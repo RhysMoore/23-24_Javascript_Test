@@ -1,4 +1,21 @@
 /* Put code for the task below */
-const redButton = document.getElementById("task2Button1")
-const yellowButton = document.getElementById("task2Button2")
-const blueButton = document.getElementById("task2Button3")
+
+// Function to change color
+function tableColor(color){
+    const table = document.querySelector(".table");
+    table.style.backgroundColor = color;
+}
+
+// Button listeners
+
+document.getElementById("buttonRed").addEventListener("click", function(){
+    tableColor("red")
+})
+
+document.getElementById("buttonYellow").addEventListener("click", function(){
+    tableColor("yellow")
+})
+
+document.getElementById("buttonBlue").addEventListener("click", function(){
+    tableColor("blue")
+})
